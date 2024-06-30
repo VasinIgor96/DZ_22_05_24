@@ -1,0 +1,701 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(30deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: auto 80px;
+}
+
+button {
+    display: block;
+    cursor: pointer;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+svg:hover {
+    fill: brown;
+}
+
+.bg-image {
+    background-image: url(../img/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vw;
+    color: white;
+}
+
+.small-con {
+    padding: 50px 60px;
+}
+
+.small-con h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 48.76px;
+    text-align: left;
+
+}
+
+.small-con p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 24.38px;
+    text-align: left;
+    width: 559px;
+    height: 72px;
+    margin: 50px 0;
+
+}
+
+.small-con a {
+    background-color: white;
+    border-radius: 21px;
+    padding: 17px 70px;
+    color: black;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.small-con a:hover {
+    background-color: brown;
+    color: white;
+}
+
+
+
+.bg-image-two {
+    background-image: url(../img/nikeee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45px;
+}
+
+.form_container {
+    max-width: 300px;
+
+}
+
+.header_container {
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: black;
+}
+
+.nav a {
+    color: black;
+}
+
+.nav a:hover {
+    color: brown;
+    font-weight: 800;
+}
+
+.weigth_a {
+    font-weight: 700;
+}
+
+.logo {
+    color: darkgray;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+span {
+    color: black;
+    font-weight: 700;
+}
+
+.header_icon {
+    display: flex;
+    gap: 35px;
+}
+
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.bg_man {
+    background-image: url('../img/man-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 45vw;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.l-sneaker,
+.r-sneaker {
+    display: flex;
+    background-color: #EFEFEF;
+    padding: 30px 300px 40px 30px;
+    border-radius: 20px;
+    margin-top: -50px;
+    text-align: center;
+    position: relative;
+}
+
+.l-sneaker:hover,
+.r-sneaker:hover {
+    box-shadow: 10px 10px 5px rgba(83, 83, 83, 0.3);
+}
+
+
+.l-card-text h2,
+.r-card-text h2 {
+    color: #FF3939;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.l-card-text p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.r-card-text p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    margin: 25px 0 40px 0;
+}
+
+.l-card-text a,
+.r-card-text a {
+    background-color: white;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.l-card-text a:hover,
+.r-card-text a:hover {
+    background-color: #d2cbcb;
+}
+
+.l-card-img img {
+    width: 500px;
+}
+
+.r-card-img img {
+    width: 420px;
+}
+
+.l-card-img,
+.r-card-img {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.l-card-img {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.r-card-img {
+    position: absolute;
+    top: -70px;
+    right: -60px;
+}
+
+.l-card-img,
+.r-card-img {
+    display: inline-block;
+    animation: rotate 2s infinite;
+}
+
+.sumTime {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.sumTime p {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.sumTime h1 {
+    font-family: Montserrat;
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.top h2 {
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 700px
+}
+
+.aa {
+    display: flex;
+    gap: 10px;
+}
+
+.aa button {
+    background-color: #F5F5F5;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+.aa button:hover {
+    background-color: #C6C6C6;
+}
+
+.chooseShoe {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.img-shoe img {
+    width: 350px;
+    height: 340px;
+}
+
+.shoe {
+    padding: 40px 0;
+    background-color: #EFEFEF;
+    width: 400px;
+    border-radius: 25px;
+    background-image: url(../img/NIKE-BG-CARD.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.shoe:hover {
+    box-shadow: 10px 10px 5px rgba(83, 83, 83, 0.3);
+}
+
+.infOfShoe {
+    padding: 20px 40px 30px 40px;
+    position: relative;
+}
+
+.infOfShoe h3 {
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.infOfShoe p {
+    font-family: Work Sans;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+
+}
+
+.infOfShoe button {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.infOfShoe button:hover {
+    background-color: #C6C6C6;
+}
+
+
+
+.category h3 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.category h2 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 43.88px;
+    letter-spacing: 0.3em;
+    text-align: center;
+
+}
+
+.workoutContainer,
+.runContainer,
+.footballContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.workout,
+.run,
+.football {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 50vh;
+}
+
+.headline h2 {
+    margin: 80px 0;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+    text-align: center;
+
+}
+
+.discount-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.first-discount-shoe,
+.second-discount-shoe {
+    display: flex;
+    background-color: #EFEFEF;
+    padding: 30px 300px 60px 30px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.first-discount-shoe:hover,
+.second-discount-shoe:hover {
+    box-shadow: 10px 10px 5px rgba(83, 83, 83, 0.3);
+}
+
+.discount-text h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: left;
+    color: #FF3939;
+}
+
+.discount-text p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 24.38px;
+    text-align: left;
+    margin: 10px 0 50px 0;
+}
+
+.discount-text a {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 200;
+    text-align: left;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+.discount-text a:hover {
+    background-color: brown;
+}
+
+.f-discount-img,
+.s-discount-img {
+    display: inline-block;
+    animation: rotate 8s infinite;
+}
+
+.f-discount-img {
+    position: absolute;
+    top: -100px;
+    right: -100px;
+}
+
+.s-discount-img {
+    position: absolute;
+    top: -60px;
+    right: -80px;
+}
+
+.f-discount-img img {
+    width: 500px;
+}
+
+.s-discount-img img {
+    width: 420px;
+}
+
+.headline2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 70px 0 30px 0;
+    text-transform: uppercase;
+}
+
+.nike-bg {
+    background-image: url(../img/products-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 19vw;
+    color: white;
+}
+
+.content {
+    padding: 40px 0;
+}
+
+.content h2 {
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+}
+
+.content p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: left;
+    margin: 20px 0 50px 0;
+
+}
+
+.content span {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: white;
+}
+
+.content a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    padding: 8px 30px;
+}
+
+.content a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+.thanks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.thanks-container p {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.thanks-container h2 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 58.51px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+
+
+
+
+
+/*! footer */
+
+.foooter_container {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+}
+
+.first_footer_nav a:hover {
+    color: brown;
+}
+
+.second_footer_nav,
+.first_footer_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+}
+
+.second_footer_nav a:hover {
+    color: brown;
+}
+
+.first_footer_nav a,
+.second_footer_nav a {
+    color: azure;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+
+/*!        form         */
+
+.forms-container {
+    width: 1440px;
+    margin: 0 150px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.switch-form,
+.switch-form-log {
+    color: green;
+    margin-left: 5px;
+
+}
+
+.forms-container a:hover {
+    text-decoration: underline;
+}
+
+.loginForm,
+.registerForm {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    height: fit-content;
+    display: none;
+    margin-bottom: 50px;
+}
+
+#login-form,
+#register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+#login-form h2,
+#register-form h2 {
+    font-family: Montserrat;
+    text-align: center;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.log-button,
+.reg-button {
+    padding: 15px;
+    border: 1px solid brown;
+    border-radius: 10px;
+}
+
+.log-button:hover,
+.reg-button:hover {
+    color: white;
+    background-color: brown;
+}
